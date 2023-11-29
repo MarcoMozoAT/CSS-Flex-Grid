@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    background-color: rgb(182, 185, 185);
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*2 columnas. 2fr ocupara el tamaño de dos columnas*/
+    /* grid-template-columns: repeat(5, 1fr); repite 5 veces una columna de 1fr */
+     grid-template-rows: 1fr 2fr;/* 2 filas. 2fr ocupara el tamaño de dos filas */
+    /* grid-auto-rows: 100px; todas las filas tendran el tamaño de 100px TODAS */
+
+    /* column-gap: 60px ; espacio entre columnas  */
+    /* row-gap: 60px ; espacio entre filas  */
+
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); hacer responsiuvo el grid si llega al tamaño minimo todo se convertira en 1fr y si no se adaptara al tamaño de columnmas con -> auto-fill */
+}
+
+.container > div {
+    background-color: rgb(33, 176, 219);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+</style>
+<body>
+
+    <section class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+    
+</body>
+</html>

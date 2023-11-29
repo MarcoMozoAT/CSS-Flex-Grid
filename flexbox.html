@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<style>
+/*
+ Row= Fila
+*/
+    .flex-container{
+        background-color: #ccc;
+        padding: 10px;
+        display: flex; /* Todos los hijos felxibles en row */
+
+        /* flex-direction: column; Todos los hijos Verticalmente */
+        /* flex-wrap: wrap; Los elementos hijos se acomoden correctamente uno abajo del otro */
+        /* align-items: center; Alinear los hijos en el centro, si es que el flex contiene una altura definida */
+
+        flex-wrap: wrap;
+        justify-content: center; /* Todos los hijos al centro */
+        /* align-content: space-between; espacio entre los hijos si es que existe una altura definida */
+
+       
+    
+    }
+
+    .caja{
+        background-color: rgb(9, 19, 107);
+        margin: 5px;
+        text-align: center;
+        line-height: 120px; /*Centrar Verticalmente/*/
+        color: white;
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .CajaEspecial{
+        flex-grow: 5; /*Modificar el tamaño de una caja en particular*/
+    }
+</style>
+<body>
+    
+    <section class="flex-container">
+        <div  class="caja CajaEspecial">1</div>
+        <div  class="caja">2</div>
+        <div  class="caja">3</div>
+        <div  class="caja">4</div>
+        <div  class="caja">1</div>
+        <div  class="caja">2</div>
+        <div  class="caja">3</div>
+        <div  class="caja">4</div>
+        <div  class="caja">1</div>
+        <div  class="caja">2</div>
+        <div  class="caja">3</div>
+        <div  class="caja">4</div>
+        <div  class="caja">1</div>
+        <div  class="caja">2</div>
+        <div  class="caja">3</div>
+        <div  class="caja">4</div>
+        <div  class="caja">3</div>
+        <div  class="caja">4</div>
+    </section>
+
+</body>
+</html>
